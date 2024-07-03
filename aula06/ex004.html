@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<body>
+    <h1 id="h1">Olá, Mundo!</h1><!--  Comentário HTML-->    
+    <script>
+       var nome = window.prompt('Digite o seu nome: ')
+       document.write(`Seu nome ${nome} tem ${nome.length} letras.`) // 
+       document.write(`<br>Seu nome em maiúsculo é ${nome.toUpperCase()}.</br>`)
+       var n1 = 1545.5
+       document.write(`<br>${n1.toFixed(2)}</br>`) // informa quantas casas decimais terá, no caso duas
+       document.write(`<br>${n1.toFixed(2).replace('.', ',')}</br>`) // troca uma coisa por outra, no caso ponto por virgula;
+       document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`) // informa o simbolo monetário de determinado país. Aqui, usa-se objeto.
+    </script>
+</body>
+</html>

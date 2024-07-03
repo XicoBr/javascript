@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<body>
+    <h1 id="h1">Olá, Mundo!</h1><!--  Comentário HTML-->
+    <p id="par1">''</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        // var n2 = Number(window.prompt('Digite outro número: ')) - outro método
+        var soma = n1 + n2
+        // window.alert('A soma é igual a ' + soma.toString())
+        window.alert(`A soma vale ${soma}.`)  // template strings
+        //========= Python x JavaScript =========
+        /* 
+            int(input) == Number(widow.prompt)
+            não precisa declarar explicitamente a variável == precisa declarar explicitamente
+            int(string) == Number.parseInt() - converte a string em número inteiro -- parseType
+
+            Strings:
+            - para converter, usa-se:
+                - var.toString() ou String(var)
+            - para usar template strings, usa-se a crase(`) para englobar a string, e para se referir à variável, usa-se ${var};
+        */
+    </script>
+</body>
+</html>
